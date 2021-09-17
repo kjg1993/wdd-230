@@ -27,7 +27,7 @@ var updateModified = function(){
      //I created an array with the names of the days of the week
     dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     spanDay.textContent = dayNames[day]+ txt;  
-    spanYear.textContent = year;
+    spanYear.textContent = year+txt;
     spanHour.textContent = hour + twoPoints;
     spanMinutes.textContent = minutes + twoPoints;
     spanSeconds.textContent = seconds;    
