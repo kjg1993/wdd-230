@@ -13,7 +13,7 @@ var updateModified = function(){
     seconds = lastModified.getSeconds(),
     txt = "/"
     twoPoints = ":" 
-    /*input to encompass tags mediated by their respective ID */
+    /*input to encompass tags mediated by their respective ID*/
     spanMonth = document.getElementById("month"),
     spanDay = document.getElementById("day"),
     spanYear = document.getElementById("year"),  
