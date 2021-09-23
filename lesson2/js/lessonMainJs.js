@@ -1,4 +1,3 @@
-"use strict";
 /* First I declare a function named updateModified and that*/
 /*runs every time I update my root document*/
 var updateModified = function () {
