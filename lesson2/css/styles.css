@@ -166,6 +166,10 @@ footer #hours {
 	main section:nth-child(3) {
 		grid-column: span 1;
 	}
+
+	section figure {
+		padding: 0 auto;
+	}
 }
 
 /* Tablet Views ******************************/
@@ -177,6 +181,7 @@ footer #hours {
 
 	section {
 		margin-bottom: 1.25em;
+		padding: 0 auto;
 	}
 
 	footer {
