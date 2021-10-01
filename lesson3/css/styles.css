@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Ubuntu:wght@300;400&display=swap");
 :root {
 	--background-color: #f0f0f0;
 	--menu-color: #a71d31;
 	--footer-color: #011936;
 	--headings-font: "Oswald", sans-serif;
 	--paragraphs-font: "Poppins", sans-serif;
+	--font-headings-all: "Roboto", sans-serif;
+	--font-paragraphs-all: "Ubuntu", sans-serif;
 }
 
 body {
 	background-color: var(--background-color);
 	font-family: var(--paragraphs-font);
+	padding: 0 2.5em;
 }
 
 header,
@@ -53,28 +57,26 @@ nav ul li a {
 	transition: 0.5s;
 }
 
-.purpose {
-	width: 65vw;
-	margin: 1em auto;
+button {
+	margin: 2em;
 }
 
-.title-purpose,
-.title-domain,
-.title-logo {
-	margin: 0 0 0 4em;
+.logo {
+	display: block;
+	width: 200px;
 }
 
-.btn-domain {
-	margin: 2em auto;
+.scenario ul li {
+	padding: 0.7em;
 }
 
-.box-btn-img p {
-	text-align: center;
+.target-audiencie ul li {
+	padding: 0.7em;
 }
 
 footer {
-	margin: 0 auto;
-	max-width: 767px;
+	margin: 2em auto;
+	max-width: 80%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -218,10 +220,47 @@ footer #hours {
 	border-top: 1px solid;
 }
 
+/* .font-types th {
+} */
+
+table {
+	margin: 5em auto;
+}
+
+.paragraph,
+.fonts {
+	font-family: var(--font-paragraphs-all);
+}
+
+.paragraph-h1,
+.fonts-h1 {
+	font-family: var(--font-headings-all);
+}
+.paragraph-h2,
+.fonts-h2 {
+	font-family: var(--font-headings-all);
+}
+
+.paragraph-h3,
+.fonts-h3 {
+	font-family: var(--font-headings-all);
+}
+
+.font-types td {
+	width: 30%;
+	height: 3em;
+	text-align: center;
+}
+
+.typography h2,
+.p-description {
+	text-align: center;
+}
 /* color-scheme styles*/
 /* color-scheme styles*/
 
 /* Tablet Views ******************************/
+
 @media only screen and (min-width: 37.5em) {
 	h1 {
 		font-size: 1.5rem;
@@ -233,6 +272,10 @@ footer #hours {
 		display: flex;
 	}
 	nav ul li {
+		flex: 1 1 100%;
+	}
+
+	footer {
 		flex: 1 1 100%;
 	}
 
@@ -248,10 +291,12 @@ footer #hours {
 	main picture {
 		display: block;
 	}
-	main picture img {
-		width: 100%;
+
+	img {
+		width: 20%;
 		height: auto;
 		border: 1px solid #bbb;
+		border-radius: 0.5em;
 	}
 }
 
@@ -275,5 +320,11 @@ footer #hours {
 	}
 	article:nth-child(3) {
 		grid-column: span 1;
+	}
+}
+
+@media (max-width: 20em) {
+	footer p {
+		font-size: 0.8em;
 	}
 }

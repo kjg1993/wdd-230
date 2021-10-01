@@ -65,7 +65,7 @@ const showPicture = () => {
 		"Image of the avaibility of polarweather's domain"
 	);
 
-	let imgContainer = document.getElementById("container-img");
+	const imgContainer = document.getElementById("container-img");
 	imgContainer.appendChild(imgDomain);
 };
 
