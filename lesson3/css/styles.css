@@ -64,11 +64,11 @@ nav ul li a {
 	margin: 0 0 0 4em;
 }
 
-/* .box-btn-img p {
-	text-align: center;
-} */
-
 .btn-domain {
+	margin: 2em auto;
+}
+
+.box-btn-img p {
 	text-align: center;
 }
 
