@@ -329,7 +329,7 @@ table {
 
 @media (max-width: 32em) {
 	body {
-		padding: 0;
+		padding: 0.3125em 0;
 	}
 
 	footer {
@@ -351,8 +351,9 @@ table {
 
 @media (max-width: 25em) {
 	body {
-		padding: 0;
+		padding: 0.3125em 0;
 	}
+
 	footer {
 		display: grid;
 		width: 100%;
