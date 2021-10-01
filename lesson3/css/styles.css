@@ -1,0 +1,279 @@
+:root {
+	--background-color: #f0f0f0;
+	--menu-color: #a71d31;
+	--footer-color: #011936;
+	--headings-font: "Oswald", sans-serif;
+	--paragraphs-font: "Poppins", sans-serif;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: var(--paragraphs-font);
+}
+
+header,
+nav {
+	max-width: 767px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 1.1rem;
+	font-family: var(--headings-font);
+	text-align: center;
+}
+
+h2 {
+	color: #536878;
+	font-family: var(--headings-font);
+}
+
+nav {
+	background-color: var(--menu-color);
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, yellow, transparent) top /
+		var(--d, 0) 10px no-repeat;
+	transition: 0.5s;
+}
+
+.purpose {
+	width: 65vw;
+	margin: 1em auto;
+}
+
+.title-purpose,
+.title-domain,
+.title-logo {
+	margin: 0 0 0 4em;
+}
+
+/* .box-btn-img p {
+	text-align: center;
+} */
+
+.btn-domain {
+	text-align: center;
+}
+
+footer {
+	margin: 0 auto;
+	max-width: 767px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: var(--font-color);
+	height: 90px;
+	border-radius: 15px;
+	background-color: var(--footer-color);
+}
+
+footer p {
+	font-family: var(--main-font);
+	font-size: 1em;
+	color: var(--background-color);
+}
+
+footer p a {
+	color: var(--background-color);
+}
+
+footer #hours {
+	padding-left: 1em;
+}
+
+/* color-scheme styles*/
+/* color-scheme styles*/
+
+.fot-color-scheme {
+	margin-top: 5em;
+}
+
+.colors th {
+	background-color: #999;
+}
+.colors td {
+	width: 25%;
+	height: 3em;
+}
+
+.primary {
+	background-color: #38386d;
+	color: var(--background-color);
+}
+
+.secondary {
+	background-color: #f24646;
+	color: var(--background-color);
+}
+
+.accent1 {
+	background-color: #f2f4f3;
+	color: var(--footer-color);
+	border: 1px solid #000;
+}
+
+.accent2 {
+	background-color: #5e503f;
+	color: var(--background-color);
+}
+
+.sitemap {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(6, 15%);
+	grid-template-rows: 3em 1.5em 1.5em 3em 3em;
+	grid-template-areas:
+		". . menu menu . ."
+		". . . top . ."
+		". left left right right ."
+		"page2 page2 . . page3 page3"
+		". . line bottom . ."
+		". . footer footer . . ";
+	margin-top: 5em;
+}
+
+.sitemap > div {
+	text-align: center;
+}
+.sm-menu {
+	grid-area: menu;
+	background-color: #f24646;
+	color: var(--background-color);
+	line-height: 3em;
+}
+
+.sm-page2 {
+	grid-area: page2;
+	background-color: #38386d;
+	color: var(--background-color);
+	line-height: 3em;
+}
+
+.sm-page3 {
+	grid-area: page3;
+	background-color: #f2f4f3;
+	border: 1px solid #000;
+	color: #38386d;
+	line-height: 3em;
+}
+
+.sm-page4 {
+	grid-area: footer;
+	background-color: #5e503f;
+	color: var(--background-color);
+	line-height: 3em;
+}
+
+.letf-top {
+	grid-area: footer;
+}
+
+.sitemap > div {
+	text-align: center;
+}
+
+.right {
+	grid-area: right;
+	border-top: 1px solid;
+	border-right: 1px solid;
+}
+
+.top {
+	grid-area: top;
+	border-left: 1px solid;
+}
+
+.left {
+	grid-area: left;
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+
+.bottom {
+	grid-area: bottom;
+	border-left: 1px solid;
+	border-top: 1px solid;
+}
+
+.line {
+	grid-area: line;
+	border-top: 1px solid;
+}
+
+/* color-scheme styles*/
+/* color-scheme styles*/
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	/* Horizontal Menu Examples */
+
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
+	nav a {
+		font-size: 1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+	article:nth-child(3) {
+		grid-column: span 2;
+	}
+	main picture {
+		display: block;
+	}
+	main picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+.colors {
+	width: 100%;
+	min-width: 350px;
+	margin: auto;
+	text-align: center;
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	h1 {
+		font-size: 2rem;
+	}
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	article:nth-child(3) {
+		grid-column: span 1;
+	}
+}
