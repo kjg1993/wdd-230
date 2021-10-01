@@ -277,10 +277,6 @@ table {
 /* Tablet Views ******************************/
 
 @media only screen and (min-width: 37.5em) {
-	body {
-		padding: 0;
-	}
-
 	h1 {
 		font-size: 1.5rem;
 	}
@@ -291,10 +287,6 @@ table {
 		display: flex;
 	}
 	nav ul li {
-		flex: 1 1 100%;
-	}
-
-	footer {
 		flex: 1 1 100%;
 	}
 
@@ -351,6 +343,10 @@ table {
 		height: auto;
 		padding: 0.125em;
 	}
+
+	.city-out {
+		display: none;
+	}
 }
 
 @media (max-width: 25em) {
@@ -375,6 +371,10 @@ table {
 	}
 
 	.p-description {
+		display: none;
+	}
+
+	.city-out {
 		display: none;
 	}
 }
