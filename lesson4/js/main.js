@@ -14,8 +14,10 @@ window.addEventListener("load", function () {
 		time = 1500;
 
 	function changeImages() {
-		document.slider.src = sliderImgs[indexImages];
-
+		// document.slider.src = sliderImgs[indexImages];
+		document
+			.getElementById("slider")
+			.setAttribute("src", sliderImgs[indexImages]);
 		if (indexImages < 8) {
 			indexImages++;
 		} else {
