@@ -14,7 +14,6 @@ window.addEventListener("load", function () {
 		time = 1500;
 
 	function changeImages() {
-		// document.slider.src = sliderImgs[indexImages];
 		document
 			.getElementById("slider")
 			.setAttribute("src", sliderImgs[indexImages]);
@@ -29,10 +28,18 @@ window.addEventListener("load", function () {
 
 updateModified = function () {
 	let currentDate = new Date();
-	let infoDate = {year: "numeric", month: "long", day: "numeric"};
-	const showDate = currentDate.toLocaleDateString("en-Uk", infoDate);
 
-	document.getElementById("date").textContent = showDate;
+	const infoDate = {
+		weekday: "long",
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	};
+
+	document.getElementById("date").textContent = currentDate.toLocaleDateString(
+		"en-Uk",
+		infoDate
+	);
 };
 
 updateModified();
