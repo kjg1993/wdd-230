@@ -109,11 +109,15 @@ img {
 	object-fit: cover;
 }
 
+.slider-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .slider-container h2 {
 	position: absolute;
 	text-align: center;
-	margin-left: 45%;
-	margin-right: 40%;
 	font-size: 1.8em;
 	color: rgba(56, 56, 109, 1);
 }
