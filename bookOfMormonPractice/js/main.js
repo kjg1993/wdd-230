@@ -287,7 +287,13 @@ button.addEventListener("click", () => {
 			"Moroni 10",
 		],
 	};
-	// const validateBooks = () => {
+	const validateBooks = () => {
+		for (const book in booksList) {
+			if (book.hasOwnProperty.call(object, key)) {
+				const element = object[key];
+			}
+		}
+
 	// 	if (inputValue != "1 Nephi") {
 	// 		alert("This Book is not right");
 	// 		list.removeChild(createButton);
