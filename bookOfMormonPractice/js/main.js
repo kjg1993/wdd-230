@@ -287,18 +287,18 @@ button.addEventListener("click", () => {
 			"Moroni 10",
 		],
 	};
-	const validateBooks = () => {
-		for (const book in booksList) {
-			if (book.hasOwnProperty.call(object, key)) {
-				const element = object[key];
-			}
-		}
 
-	// 	if (inputValue != "1 Nephi") {
-	// 		alert("This Book is not right");
-	// 		list.removeChild(createButton);
-	// 		list.removeChild(items);
-	// 		return false;
+	// const validateBooks = () => {
+	// 	for (const book in booksList) {
+	// 		if (inputValue == booksList[book]) {
+	// 			list.appendChild(items);
+	// 			list.appendChild(createButton);
+	// 		} else {
+	// 			alert("This Book is not right");
+	// 			list.removeChild(createButton);
+	// 			list.removeChild(items);
+	// 			return false;
+	// 		}
 	// 	}
 	// };
 	// validateBooks();
