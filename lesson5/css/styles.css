@@ -19,17 +19,9 @@ body {
 	text-align: center;
 	border: 1px solid #000;
 	border-radius: 4rem;
-	background: #009fff; /* fallback for old browsers */
-	background: -webkit-linear-gradient(
-		to right,
-		#ec2f4b,
-		#009fff
-	); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(
-		to right,
-		#ec2f4b,
-		#009fff
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #009fff;
+	background: -webkit-linear-gradient(to right, #ec2f4b, #009fff);
+	background: linear-gradient(to right, #ec2f4b, #009fff);
 }
 
 .banner p {
@@ -82,6 +74,11 @@ nav ul {
 	color: white;
 	transition: 0.5s;
 }
+
+nav .active {
+	background-color: #282856;
+}
+
 .navigation a:hover {
 	color: var(--headings-color);
 	background-color: #282856;
@@ -179,9 +176,18 @@ img {
 }
 
 .article-speach img {
-	width: 50%;
-	height: 50%;
-	padding: 1rem;
+	display: block;
+	float: left;
+	width: 18rem;
+	height: 15rem;
+	margin: 1rem;
+	box-shadow: -5px -19px 70px -24px rgba(0, 0, 0, 0.75);
+}
+
+.article-speach p {
+	padding: 0.5rem;
+	line-height: 1.5 em;
+	text-align: justify;
 }
 
 .fas,
@@ -212,7 +218,6 @@ img {
 	max-width: 70%;
 	height: 15.625rem;
 	margin: 1.8rem auto;
-	/* border: 1px solid #000; */
 	background-color: #e6e7ff;
 }
 
@@ -332,13 +337,10 @@ footer {
 	width: 100%;
 	height: 20vh;
 	display: flex;
+	text-align: center;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-}
-
-footer span {
-	text-align: center;
 }
 
 footer #lastModify {
@@ -361,99 +363,4 @@ footer #lastModify {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-/* ----------------------------- */
-/* Media Query for large + medium views */
-/* ----------------------------- */
-
-@media only screen and (min-width: 42.813rem) {
-	nav ul li a {
-		padding: 0.3rem 0.3rem;
-	}
-
-	.responsive li {
-		display: block;
-	}
-}
-
-@media only screen and (min-width: 35rem) {
-	nav button {
-		display: none;
-	}
-
-	.hide {
-		display: block;
-	}
-
-	nav ul li {
-		float: left;
-	}
-
-	nav {
-		display: flex;
-		justify-content: center;
-	}
-
-	nav ul li a {
-		padding: 1rem 1rem;
-	}
-
-	nav {
-		display: flex;
-	}
-	nav li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	nav a {
-		text-align: center;
-	}
-	.nav li:first-child {
-		display: none;
-	}
-}
-
-/* Media Query for medium+ views */
-@media only screen and (min-width: /*32.5em*/ 40.625rem) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-
-	nav {
-		width: 100%;
-		display: flex;
-	}
-
-	nav li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-
-	nav a {
-		text-align: center;
-	}
-	.nav li:first-child {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 32.5em) {
-	.forecast {
-		display: none;
-	}
-
-	.contac-info figure {
-		display: none;
-	}
 }

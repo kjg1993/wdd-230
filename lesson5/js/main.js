@@ -1,12 +1,28 @@
 const banner = document.getElementById("banner");
+let today = new Date();
+day = today.getDay();
 
 const showBanner = () => {
-	let today = new Date();
-	friday = today.getDay();
-	if (friday == 5) {
-		banner.style.display = "none";
-	}
+	banner.style.display = "block";
 };
+
+if (day == 5) {
+	showBanner();
+}
+
+//Function that display the others paragraphs
+
+const btn = document.getElementById("readButton");
+
+btn.addEventListener("click", () => {
+	if (document.querySelector("#paragraph").style.display == "none") {
+		document.querySelector("#paragraph").style.display = "block";
+		document.querySelector("#readButton").innerHTML = "Read less";
+	} else {
+		document.querySelector("#paragraph").style.display = "none";
+		document.querySelector("#readButton").innerHTML = "Read more";
+	}
+});
 
 const updateModified = function () {
 	let currentDate = new Date();
@@ -41,15 +57,3 @@ hambutton.addEventListener(
 window.onresize = () => {
 	if (window.innerWidth > 760) mainnav.classList.remove("responsive");
 };
-
-//Function that display the others paragraphs
-
-function readParagraph() {
-	if (document.querySelector("#paragraph").style.display == "none") {
-		document.querySelector("#paragraph").style.display = "block";
-		document.querySelector("#readButton").innerHTML = "Read less";
-	} else {
-		document.querySelector("#paragraph").style.display = "none";
-		document.querySelector("#readButton").innerHTML = "Read more";
-	}
-}

@@ -12,6 +12,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/small.css">
+		<link rel="stylesheet" href="css/medium.css">
+		<link rel="stylesheet" href="css/large.css">
 
 		<title>Assignment: Preston Town Page-Kevin Guzman</title>
 		<link rel="shortcut icon" href="images/favicon_2.ico" />
@@ -21,7 +24,7 @@
 		></script>
 	</head>
 	<body>
-		<div class="banner" id="banner" style="display: block;">
+		<div class="banner" id="banner" style="display: none;">
 			<p>Saturday = Preston Pancakes in the Park! 
 			 9:00 a.m. Saturday at the city park pavilion.</p>
 		</div>
@@ -46,8 +49,8 @@
 		<nav>
 			<ul class="navigation">
 				<li><a class="ham" href="#">&#9776;Menu</a></li>
-				<li><a href="../lesson4/preston-4.html">Home</a></li>
-				<li><a href="preston-5.html">Preston</a></li>
+				<li><a href="../lesson4/preston-4.html" >Home</a></li>
+				<li><a href="preston-5.html" class="active">Preston</a></li>
 				<li><a href="">Soda Springs</a></li>
 				<li><a href="">Fish Haven</a></li>
 				<li><a href="">Storm Center</a></li>
@@ -107,6 +110,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="site-description article">
 				<div class="article-title">
 					<h2>Lorem ipsum ?</h2>
@@ -140,7 +144,7 @@
 						quos repudiandae? Autem vel nihil vitae ea minus officia voluptatum,
 						excepturi dolorem hic architecto recusandae. Sapiente?
 					</p>
-					<a href="" id="readButton" onclick="readParagraph()">Read More</a>
+					<a href="" id="readButton">Read More</a>
 					<div id="paragraph" style="display: none;">
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
