@@ -94,7 +94,8 @@ nav .active {
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	font-family: var(--headings-font);
 }
 
@@ -222,7 +223,7 @@ img {
 }
 
 .contac-info {
-	height: 20em;
+	height: 22em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -231,10 +232,16 @@ img {
 	margin-bottom: 1.5rem;
 }
 
+.contac-info h2 {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+}
 .contac-info figure {
 	width: 50%;
 	height: 19rem;
-	margin: 0.8rem;
+
 	padding: 0;
 }
 
@@ -242,11 +249,16 @@ img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	margin: 2.8rem 0rem 0rem 0rem;
 }
 
 .contac-info .social-media {
 	display: flex;
 	flex-direction: column;
+}
+
+.contac-info .social-media h3 {
+	text-align: center;
 }
 
 .contac-info .social-media span {
