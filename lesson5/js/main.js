@@ -1,18 +1,14 @@
-//Function that display the others paragraphs
+const banner = document.getElementById("banner");
 
-let btn = document
-	.querySelector("#readButton")
-	.addEventListener("click", () => {
-		if (document.querySelector("#paragraph").style.display == "none") {
-			document.querySelector("#paragraph").style.display = "block";
-			document.querySelector("#readButton").innerHTML = "Read more";
-		} else {
-			document.querySelector("#paragraph").style.display = "none";
-			document.querySelector("#readButton").innerHTML = "Read less";
-		}
-	});
+const showBanner = () => {
+	let today = new Date();
+	friday = today.getDay();
+	if (friday == 5) {
+		banner.style.display = "none";
+	}
+};
 
-updateModified = function () {
+const updateModified = function () {
 	let currentDate = new Date();
 
 	const infoDate = {
@@ -45,3 +41,15 @@ hambutton.addEventListener(
 window.onresize = () => {
 	if (window.innerWidth > 760) mainnav.classList.remove("responsive");
 };
+
+//Function that display the others paragraphs
+
+function readParagraph() {
+	if (document.querySelector("#paragraph").style.display == "none") {
+		document.querySelector("#paragraph").style.display = "block";
+		document.querySelector("#readButton").innerHTML = "Read less";
+	} else {
+		document.querySelector("#paragraph").style.display = "none";
+		document.querySelector("#readButton").innerHTML = "Read more";
+	}
+}

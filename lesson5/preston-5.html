@@ -15,8 +15,16 @@
 
 		<title>Assignment: Preston Town Page-Kevin Guzman</title>
 		<link rel="shortcut icon" href="images/favicon_2.ico" />
+		<script
+			src="https://kit.fontawesome.com/5c7734b76e.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
+		<div class="banner" id="banner" style="display: block;">
+			<p>Saturday = Preston Pancakes in the Park! 
+			 9:00 a.m. Saturday at the city park pavilion.</p>
+		</div>
 		<header class="head-of-page">
 			<div class="logo-container">
 				<figure>
@@ -102,12 +110,12 @@
 			<section class="site-description article">
 				<div class="article-title">
 					<h2>Lorem ipsum ?</h2>
-					<p>by Kevin Guzman</p>
+					<span class="writer-name">by Kevin Guzman</span>
 				</div>
 
 				<article class="article-speach">
-					<img src="" alt="" />
-					<p>
+					<img src="images/bunny.jpg" alt="Bunny fun" />
+					<p >
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
 						rerum repellendus ea minus nostrum alias amet nam neque. Esse,
 						possimus quos? Aliquam accusantium esse fugit non inventore eaque
@@ -132,8 +140,8 @@
 						quos repudiandae? Autem vel nihil vitae ea minus officia voluptatum,
 						excepturi dolorem hic architecto recusandae. Sapiente?
 					</p>
-					<a href="" id="readButton">Read More</a>
-					<div id="paragraph" style="display: none">
+					<a href="" id="readButton" onclick="readParagraph()">Read More</a>
+					<div id="paragraph" style="display: none;">
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
 							veniam quibusdam corrupti vero sequi quisquam molestias sapiente
@@ -186,8 +194,27 @@
 					</div>
 				</article>
 			</section>
-			<!--<section class="site-description"><h2>Contact Information</h2></section>
-			<section class="site-description"><h2>Map</h2></section> -->
+			<section class="site-description contac-info">
+				<figure>
+					<img
+						src="images/place_polar_weather.jpg"
+						alt="Place where polar climate is located"
+					/>
+				</figure>
+				<div class="social-media">
+					<h2>Polar Weather</h2>
+					<span
+						><i class="fas fa-map-marker-alt"></i>South Guayaquil Rumichaca/Letamendi</span
+					>
+					<span><i class="fas fa-phone"></i>+593 (520) 65482</span>
+					<span><i class="fas fa-paper-plane"></i>email@polarweather.com</span>
+					<div class="social-media-icons">
+					   <i class="fab fa-facebook"></i>
+					   <i class="fab fa-whatsapp"></i>
+					   <i class="fab fa-instagram-square"></i>
+				    </div>
+			</section>
+			<!--<section class="site-description"><h2>Map</h2></section> -->
 		</main>
 		<footer>
 			<div class="copyright">

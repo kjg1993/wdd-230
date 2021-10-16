@@ -11,6 +11,37 @@ body {
 	background-color: var(--backgroud-color-site);
 }
 
+.banner {
+	position: relative;
+	max-width: 75%;
+	margin: 0 auto;
+	height: 10rem;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 4rem;
+	background: #009fff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ec2f4b,
+		#009fff
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ec2f4b,
+		#009fff
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.banner p {
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	font-family: var(--paragraph-font);
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #f2f4f3;
+}
+
 header {
 	width: 100%;
 	height: 9rem;
@@ -53,6 +84,7 @@ nav ul {
 }
 .navigation a:hover {
 	color: var(--headings-color);
+	background-color: #282856;
 }
 
 .responsive a {
@@ -138,16 +170,84 @@ img {
 
 .article {
 	max-width: 47.5rem;
+	background-color: #e6e7ff;
 }
+
+.article span {
+	font-family: var(--paragraph-font);
+	border-bottom: 1px solid var(--header-nav-color);
+}
+
+.article-speach img {
+	width: 50%;
+	height: 50%;
+	padding: 1rem;
+}
+
+.fas,
+.fas,
+.fas {
+	margin: 0.5rem;
+}
+
+.social-media-icons {
+	width: 15.625rem;
+}
+
+.social-media-icons .fab,
+.fab,
+.fab {
+	font-size: 1.5rem;
+	display: inline-block;
+	padding: 1.5rem;
+}
+
 .site-description article p {
+	font-size: 1.125rem;
 	font-family: var(--paragraph-font);
 }
 
 .forecast {
 	display: block;
-	width: 70%;
+	max-width: 70%;
+	height: 15.625rem;
 	margin: 1.8rem auto;
-	border: 1px solid #000;
+	/* border: 1px solid #000; */
+	background-color: #e6e7ff;
+}
+
+.contac-info {
+	height: 20em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: #e6e7ff;
+	max-width: 75%;
+	margin-bottom: 1.5rem;
+}
+
+.contac-info figure {
+	width: 50%;
+	height: 19rem;
+	margin: 0.8rem;
+	padding: 0;
+}
+
+.contac-info figure img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.contac-info .social-media {
+	display: flex;
+	flex-direction: column;
+}
+
+.contac-info .social-media span {
+	text-align: left;
+	padding: 0.8rem 0;
+	font-family: var(--paragraph-font);
 }
 
 /* Summary-weather section */
@@ -315,7 +415,7 @@ footer #lastModify {
 }
 
 /* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: /*32.5em*/ 40.625rem) {
 	.navigation {
 		display: flex;
 	}
@@ -344,6 +444,16 @@ footer #lastModify {
 		text-align: center;
 	}
 	.nav li:first-child {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 32.5em) {
+	.forecast {
+		display: none;
+	}
+
+	.contac-info figure {
 		display: none;
 	}
 }
