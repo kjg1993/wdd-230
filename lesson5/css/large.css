@@ -1,6 +1,5 @@
 /* ----------------------------- */
 /* Media Query for large + medium views */
-/* ----------------------------- */
 
 @media only screen and (min-width: 42.813rem) {
 	nav ul li a {
