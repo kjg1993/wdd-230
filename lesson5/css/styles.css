@@ -179,8 +179,8 @@ img {
 .article-speach img {
 	display: block;
 	float: left;
-	width: 18rem;
-	height: 15rem;
+	width: 20rem;
+	height: 18rem;
 	margin: 1rem;
 	box-shadow: -5px -19px 70px -24px rgba(0, 0, 0, 0.75);
 }
