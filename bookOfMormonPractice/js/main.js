@@ -21,7 +21,9 @@ button.addEventListener("click", () => {
 	createButton.addEventListener("click", () => {
 		list.removeChild(items);
 		list.removeChild(createButton);
+		input.focus();
 	});
+	input.focus();
 
 	const validate = () => {
 		if (inputValue == null || inputValue == "" || /^\s+$/.test(inputValue)) {
