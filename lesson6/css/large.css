@@ -1,0 +1,49 @@
+/* ----------------------------- */
+/* Media Query for large + medium views */
+
+@media only screen and (min-width: 42.813rem) {
+	nav ul li a {
+		padding: 0.3rem 0.3rem;
+	}
+
+	.responsive li {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 35rem) {
+	nav button {
+		display: none;
+	}
+
+	.hide {
+		display: block;
+	}
+
+	nav ul li {
+		float: left;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	nav ul li a {
+		padding: 1rem 1rem;
+	}
+
+	nav {
+		display: flex;
+	}
+	nav li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	nav a {
+		text-align: center;
+	}
+	.nav li:first-child {
+		display: none;
+	}
+}

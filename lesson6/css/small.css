@@ -1,0 +1,13 @@
+@media only screen and (max-width: 20em) {
+	.article-speach img {
+		display: block;
+		float: unset;
+		width: 18rem;
+		height: 15rem;
+		margin: 0 auto;
+		box-shadow: 2px 2px 62px -5px rgba(0, 0, 0, 0.75);
+	}
+	img {
+		max-width: 100%;
+	}
+}
