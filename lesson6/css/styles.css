@@ -142,16 +142,11 @@ img {
 	align-items: center;
 }
 
-.slider-container picture {
-	width: 80%;
-	height: 18rem;
-}
-
 .slider-container img {
 	display: block;
 	width: 100%;
 	margin: 0 2%;
-	height: 18rem;
+	height: 46vh;
 }
 
 .slider-container h2 {

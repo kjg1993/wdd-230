@@ -46,4 +46,8 @@
 	.nav li:first-child {
 		display: none;
 	}
+
+	.slider-container picture {
+		max-width: 820%;
+	}
 }

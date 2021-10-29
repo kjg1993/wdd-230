@@ -46,4 +46,8 @@
 		text-align: center;
 		position: absolute;
 	}
+
+	.slider-container picture {
+		max-width: 85%;
+	}
 }
