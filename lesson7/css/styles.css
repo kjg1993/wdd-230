@@ -56,12 +56,12 @@ h2 {
 	justify-content: space-around;
 }
 
-.galeryContainer picture {
+.galeryContainer figure {
 	margin: 0.5rem;
 	border-radius: 0.5rem;
 }
 
-.galeryContainer picture img {
+.galeryContainer figure img {
 	width: 100%;
 	border-radius: 0.5rem;
 }
