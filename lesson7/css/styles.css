@@ -40,7 +40,6 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 2rem;
 }
 
 h2 {
@@ -48,15 +47,16 @@ h2 {
 }
 
 .galeryContainer {
-	max-width: 90%;
+	width: 95%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-a;
 }
 
 .galeryContainer figure {
+	width: 21.875rem;
 	margin: 0.5rem;
 	border-radius: 0.5rem;
 }
@@ -66,10 +66,10 @@ h2 {
 	border-radius: 0.5rem;
 }
 
-.description {
+figcaption {
 	font-family: var(--paragraph-font);
 	text-align: center;
-	margin: 0.5rem 0rem;
+	margin: 0.5rem;
 }
 
 .norm:hover {
@@ -156,14 +156,14 @@ h1 {
 	width: 100%;
 }
 
-figure {
+.logo-figure {
 	width: 250px;
 	height: 250px;
 	padding: 0;
 	margin: 0;
 }
 
-img {
+.logo-figure img {
 	width: 11.5em;
 	align-items: center;
 }
