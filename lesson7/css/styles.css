@@ -56,16 +56,6 @@ h2 {
 	justify-content: space-around;
 }
 
-.galeryContainer {
-	width: 95%;
-	margin: 1.5rem 0;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
-}
-
 .galeryContainer figure {
 	width: 21.875rem;
 	margin: 0.5rem;
