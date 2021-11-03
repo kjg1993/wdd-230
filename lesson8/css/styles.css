@@ -24,15 +24,22 @@ table {
 	border-right: none;
 	border-spacing: 0;
 	margin: 1.5rem;
-	box-shadow: 15px 6px 15px 5px #000000;
+	box-shadow: 5px 2px 20px 11px rgba(0, 0, 0, 0.74);
 }
 
-table .table-head1 th {
-	font-size: 2rem;
+table caption {
+	width: 100%;
 	background-color: var(--heading-foot-bckg);
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	padding: 0.5rem;
+	border: 1px solid var(--border-color);
+	border-bottom: none;
+	box-shadow: 10px 0px 20px 6px rgba(0, 0, 0, 0.75);
 }
 
-table .table-head2 th {
+table .table-head th {
 	text-align: center;
 	border-right: 2px solid var(--border-color);
 	background-color: var(--heading-color);
@@ -40,11 +47,11 @@ table .table-head2 th {
 	font-size: 2rem;
 }
 
-table .table-head2 th:nth-child(3) {
+table .table-head th:nth-child(3) {
 	width: 40%;
 }
 
-table .table-head2 th:nth-child(2) {
+table .table-head th:nth-child(2) {
 	width: 25%;
 }
 
