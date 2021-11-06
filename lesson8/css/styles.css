@@ -249,7 +249,7 @@ input[type="tel"],
 input[type="number"] {
 	font-family: var(--headings-font);
 	display: block;
-	border: 1px solid #999;
+	border: 1px solid rgb(236, 236, 236);
 	border-radius: 4px;
 	padding: 0.75rem;
 	width: 100%;
@@ -379,6 +379,35 @@ form .btn {
 	margin: 0 0 5% 5%;
 }
 /*-----forms styles -------*/
+/*--------------------*/
+/*Thanks page styles
+/*--------------------*/
+
+.hero-name {
+	text-align: center;
+	font-size: 4rem;
+	color: rgb(236, 236, 236);
+}
+
+main section .message {
+	font-family: var(--paragraph-font);
+	font-size: 2rem;
+	text-align: center;
+	color: rgb(236, 236, 236);
+}
+
+main section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main section .messageContainer {
+	position: absolute;
+}
+
+/*--------------------*/
+/*Thanks page styles
+/*--------------------*/
 
 footer {
 	font-size: 1.2rem;
