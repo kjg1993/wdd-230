@@ -1,3 +1,4 @@
+/*------ buildin table page styles----*/
 :root {
 	--main-font: "Ubuntu", sans-serif;
 	--data-color-gray: #e7f0ed;
@@ -100,4 +101,331 @@ table tfoot td {
 	font-weight: bold;
 	border-top: 2px solid var(--border-color);
 	border-right: 2px solid var(--border-color);
+}
+/*------ buildin table page styles----*/
+
+:root {
+	--paragraph-font: "Roboto", sans-serif;
+	--headings-font: "Ubuntu", sans-serif;
+	--header-nav-color: #38386d;
+	--headings-color: #f24646;
+	--backgroud-color-site: #f2f4f3;
+	--footer-color: #5e503f;
+}
+
+header {
+	width: 100%;
+	height: 9rem;
+	display: flex;
+}
+
+nav {
+	width: 100%;
+	background-color: var(--header-nav-color);
+}
+
+nav ul {
+	margin: 0;
+}
+
+.ham {
+	text-align: center;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0.8rem;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	font-family: var(--paragraph-font);
+	margin: 0 1.2rem;
+	text-decoration: none;
+	color: white;
+	transition: 0.5s;
+}
+
+nav .active {
+	background-color: #282856;
+}
+
+.navigation a:hover {
+	color: var(--headings-color);
+	background-color: #282856;
+}
+
+.responsive a {
+	text-align: center;
+	padding: 0.6rem 0;
+}
+
+.responsive li {
+	display: block;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--headings-font);
+}
+
+h1 {
+	text-align: center;
+	color: var(--header-nav-color);
+	font-size: 1.75rem;
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 100%;
+}
+
+.logo-figure {
+	width: 184px;
+	height: 16vh;
+	padding: 0;
+	margin: 0;
+}
+
+.logo-figure img {
+	width: 12em;
+	align-items: center;
+}
+
+.slogan-contaier p {
+	font-family: var(--paragraph-font);
+}
+
+.slogan {
+	font-family: var(--paragraph-font);
+	font-size: 13px;
+}
+/*-----forms styles -------*/
+
+form {
+	max-width: 60rem;
+	margin: 0 auto;
+}
+
+form fieldset {
+	margin: 2rem 2%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--header-nav-color);
+	border-image: initial;
+	border-radius: 10px;
+	padding: 0.5rem 2%;
+}
+
+form legend {
+	color: #445ba9;
+	margin: 0 1rem;
+	padding: 0 0.5rem;
+	text-align: center;
+	font-family: var(--paragraph-font);
+}
+
+form label.top {
+	display: block;
+	padding-top: 1rem;
+	color: var(--header-nav-color);
+	font-family: var(--headings-font);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+	font-family: var(--headings-font);
+	display: block;
+	border: 1px solid #999;
+	border-radius: 4px;
+	padding: 0.75rem;
+	width: 100%;
+	max-width: 20rem;
+}
+
+input[type="date"],
+input.sbsList,
+select {
+	display: block;
+	border: 1px solid #999;
+	border-radius: 4px;
+	padding: 0.75rem;
+	color: #555;
+	width: 100%;
+	max-width: 20rem;
+	font-family: var(--heading-foot);
+	color: var(--header-nav-color);
+	margin: 0.5rem 0;
+}
+
+input[type="range"] {
+	display: block;
+	border-radius: 4px;
+	padding: 0.75rem;
+	color: #555;
+	width: 100%;
+	max-width: 17.5rem;
+	font-family: var(--heading-foot);
+	color: var(--header-nav-color);
+}
+
+label.flexly {
+	width: 100%;
+	max-width: 20rem;
+	font-family: var(--headings-font);
+	color: var(--header-nav-color);
+}
+
+form span#ratingvalue {
+	position: relative;
+	top: -30px;
+	left: 17.5rem;
+}
+
+form label.sbs {
+	display: block;
+	font-family: var(--headings-font);
+	margin: 0.5rem 0;
+	color: var(--header-nav-color);
+}
+
+form label#sbs {
+	font-family: var(--headings-font);
+}
+
+form label.sbsListLabel,
+label.sbsRating {
+	font-family: var(--headings-font);
+	margin: 0.5rem 0;
+	color: var(--header-nav-color);
+}
+
+form input.submitBtn {
+	border: none;
+	background-color: #9c2c13;
+	color: white;
+	border-radius: 1rem;
+	padding: 0.75rem 1.5rem;
+	margin: 0 0 2rem 2%;
+	width: 96%;
+	max-width: 20rem;
+}
+
+form label.top input:required {
+	border-left: 6px solid red;
+}
+
+form label.top input:required:valid {
+	border-left: 6px solid green;
+}
+
+input[type="radio"] {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	position: relative;
+	top: 3px;
+}
+
+form label.yes,
+label.maybe,
+label.no {
+	display: block;
+	font-family: var(--headings-font);
+	color: var(--header-nav-color);
+	margin: 1.5rem 0;
+}
+
+form .textContainer {
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+form .textContainer label {
+	font-family: var(--headings-font);
+	font-size: 1rem;
+}
+
+form .textContainer textarea {
+	max-width: 20rem;
+	min-width: 12rem;
+	max-height: 20rem;
+	min-height: 12rem;
+}
+
+form .btn {
+	border: none;
+	background-color: var(--header-nav-color);
+	color: white;
+	border-radius: 0.5rem;
+	padding: 0.75rem 0.5rem;
+	width: 150px;
+	max-width: 20rem;
+	font-family: var(--paragraph-font);
+	margin: 0 0 5% 5%;
+}
+/*-----forms styles -------*/
+
+footer {
+	font-size: 1.2rem;
+	background-color: var(--footer-color);
+	font-family: var(--paragraph-font);
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+footer #lastModify {
+	margin: 0.8rem auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#lastModify #lastVisit {
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+
+.copyright a {
+	color: var(--headings-color);
+	color: white;
+}
+
+.copyright span,
+#date {
+	color: white;
+}
+
+/*---------------------------------*/
+
+@media only screen and (max-width: 20em) {
+	.article-speach img {
+		display: block;
+		float: unset;
+		width: 18rem;
+		height: 15rem;
+		margin: 0 auto;
+		box-shadow: 2px 2px 62px -5px rgba(0, 0, 0, 0.75);
+	}
+	.slider-container picture {
+		max-width: 100%;
+	}
 }

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+		<title>Storm Center page</title>
+	</head>
+	<body>
+		<header class="head-of-page">
+			<div class="logo-container">
+				<figure class="logo-figure">
+					<img
+						class="logo"
+						src="images/polar_weather_modifi_logo-2.png"
+						alt="Polar
+				Weather Logo site"
+					/>
+				</figure>
+
+				<div class="slogan-contaier">
+					<h1>Polar Weather</h1>
+					<p class="slogan">The weather that you like it</p>
+				</div>
+			</div>
+		</header>
+
+		<nav>
+			<ul class="navigation">
+				<li><a class="ham" href="#">&#9776;Menu</a></li>
+				<li><a href="../lesson4/preston-4.html">Home</a></li>
+				<li><a href="preston-5.html">Preston</a></li>
+				<li><a href="">Soda Springs</a></li>
+				<li><a href="">Fish Haven</a></li>
+				<li><a href="" class="active">Storm Center</a></li>
+				<li><a href="">Galery</a></li>
+			</ul>
+		</nav>
+
+		<form action="">
+			<fieldset class="firstForm">
+				<legend>Personal information</legend>
+				<label for="name" class="top"
+					>Full Name*
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Type your name here"
+						required
+				/></label>
+
+				<label for="email" class="top"
+					>Email
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="youremail@email.com"
+				/></label>
+
+				<label for="phone" class="top"
+					>Phone* <input type="tel" name="phone" id="phone" required
+				/></label>
+
+				<label for="code" class="top"
+					>Zip Code* <input type="number" name="code" id="code" required
+				/></label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Storm Date</legend>
+
+				<label for="date" class="sbs"
+					>Storm Date <input type="date" name="date" id="date"
+				/></label>
+
+				<label for="storm" class="sbsListLabel"
+					>Type Storm <input list="storm" name="storm" class="sbsList" />
+					<datalist id="storm">
+						<option value="Flash Flood"></option>
+						<option value="Hail"></option>
+						<option value="Hurricane"></option>
+						<option value="Thunderstorm"></option>
+						<option value="Tornado"></option>
+						<option value="Snow storm"></option>
+						<option value="Cold front"></option>
+					</datalist>
+				</label>
+				<label class="flexly" for="rating"
+					>Rating:
+					<input
+						type="range"
+						id="rating"
+						value="5"
+						min="1"
+						max="10"
+						step="1"
+						list="tickmarks"
+						oninput="adjustRating(this.value)"
+						onchange="adjustRating(this.value)"
+					/>
+					<span id="ratingvalue">5</span>
+				</label>
+
+				<datalist id="tickmarks">
+					<option value="0"></option>
+					<option value="1"></option>
+					<option value="2"></option>
+					<option value="3"></option>
+					<option value="4"></option>
+					<option value="5"></option>
+					<option value="6"></option>
+					<option value="7"></option>
+					<option value="8"></option>
+					<option value="9"></option>
+					<option value="10"></option>
+				</datalist>
+
+				<label for="region" class="sbs">Storm Region</label>
+				<select name="">
+					<option value="">Select Region</option>
+					<option value="preston">Preston</option>
+					<option value="soda">Soda Springs</option>
+					<option value="fish">Fish Haven</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Danger Level</legend>
+				<label for="yes" class="yes"
+					>Yes <input type="radio" name="yes" id="yes" value="yes"
+				/></label>
+
+				<label for="maybe" class="maybe"
+					>Maybe <input type="radio" name="maybe" id="maybe" value="maybe"
+				/></label>
+
+				<label for="no" class="no"
+					>No <input type="radio" name="no" id="no" value="no"
+				/></label>
+
+				<div class="textContainer">
+					<label for="comments" class="comments">Comments</label>
+					<textarea
+						name="comments"
+						id="comments"
+						cols="30"
+						rows="10"
+					></textarea>
+				</div>
+			</fieldset>
+			<input type="submit" value="Send report" class="btn" />
+		</form>
+
+		<footer>
+			<div class="copyright">
+				<span>© 2021|Kevin Guzman - WDD 230│</span><span>Guayaquil│</span
+				><span>
+					<a href="https://www.byui.edu/online" target="blank"
+						>BYU Online Learning</a
+					>
+				</span>
+			</div>
+			<div id="lastModify">
+				<span id="date"></span>
+				<!-- <span id="lastVisit"></span> -->
+			</div>
+		</footer>
+	</body>
+	<script src="js/main-8.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ["Roboto"],
+				families: ["Ubuntu"],
+			},
+		});
+	</script>
+</html>
