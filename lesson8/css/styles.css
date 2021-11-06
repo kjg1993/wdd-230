@@ -426,11 +426,7 @@ footer #lastModify {
 	margin: 0.8rem auto;
 	display: flex;
 	flex-direction: column;
-}
-
-#lastModify #lastVisit {
-	color: #fff;
-	border-bottom: 2px solid #fff;
+	color: white;
 }
 
 .copyright a {

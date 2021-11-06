@@ -1,18 +1,17 @@
 const updateModified = function () {
 	let currentDate = new Date();
 
-	const infoDate = {
+	const date = {
 		weekday: "long",
 		year: "numeric",
 		month: "long",
 		day: "numeric",
 	};
 
-	document.getElementById("date").textContent = currentDate.toLocaleDateString(
-		"en-Uk",
-		infoDate
-	);
+	document.getElementById("lastModify").textContent =
+		currentDate.toLocaleDateString("en-Uk", date);
 };
+
 updateModified();
 
 /// button resposive menu
