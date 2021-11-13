@@ -349,7 +349,10 @@ footer {
 }
 
 footer span {
-	text-align: center;
+	color: white;
+}
+
+footer .copyright a {
 	color: white;
 }
 
