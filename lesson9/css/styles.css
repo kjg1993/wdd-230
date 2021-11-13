@@ -370,3 +370,19 @@ footer #lastModify {
 	display: table;
 	clear: both;
 }
+/*-----wires frame page*/
+.wireframes {
+	text-align: center;
+	margin: 3rem;
+}
+
+.wireframes a {
+	text-decoration: none;
+	display: block;
+	width: 5rem;
+	padding: 1rem;
+	background-color: var(--headings-color);
+	color: white;
+	font-family: var(--paragraph-font);
+	margin: 1rem auto;
+}
