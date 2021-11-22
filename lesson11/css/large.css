@@ -1,0 +1,38 @@
+@media only screen and (max-width: 55rem) {
+	div.rows-flex {
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.rows-flex article {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 1rem;
+	}
+
+	div.rows-flex div.data-1,
+	div.data-2,
+	div.data-3 {
+		display: flex;
+	}
+
+	div.rows-flex article:nth-child(2) {
+		flex-direction: row-reverse;
+	}
+}
+
+@media only screen and (max-width: 50rem) {
+	h1 {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 42.813rem) {
+	nav ul li a {
+		padding: 0.3rem 0.3rem;
+	}
+
+	.responsive li {
+		display: block;
+	}
+}

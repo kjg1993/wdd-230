@@ -1,0 +1,120 @@
+@media only screen and (max-width: 38rem) {
+	div.rows-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	div.rows-flex article {
+		display: flex;
+		flex-wrap: wrap-reverse;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #e6e7ff;
+		margin: 0 auto;
+		height: auto;
+	}
+
+	div.rows-flex img {
+		border-radius: 0.5rem;
+		width: 92%;
+		padding: 0.5rem;
+	}
+
+	h2 {
+		margin: 1rem auto;
+	}
+
+	.contac-info figure {
+		display: none;
+	}
+
+	h2.ctus {
+		display: none;
+	}
+
+	.contac-info .social-media {
+		margin: 1rem auto 0 auto;
+	}
+
+	.article-speach img {
+		margin: 0 auto;
+	}
+
+	.forecast {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 35rem) {
+	nav button {
+		display: none;
+	}
+
+	.hide {
+		display: block;
+	}
+
+	nav ul li {
+		float: left;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	nav ul li a {
+		padding: 1rem 1rem;
+	}
+
+	nav {
+		display: flex;
+	}
+	nav li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	nav a {
+		text-align: center;
+	}
+	.nav li:first-child {
+		display: none;
+	}
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+	nav {
+		width: 100%;
+		display: flex;
+	}
+
+	nav li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	nav a {
+		text-align: center;
+	}
+	.nav li:first-child {
+		display: none;
+	}
+}
