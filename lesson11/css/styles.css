@@ -74,6 +74,7 @@ h1,
 h2,
 h3 {
 	font-family: var(--headings-font);
+	text-align: center;
 }
 
 h1 {
@@ -296,6 +297,68 @@ img {
 }
 
 /* ----------------------- */
+
+/*--row-flex--**/
+
+div.rows-flex {
+	width: 75%;
+	margin: 0.5rem auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: auto;
+}
+
+div.rows-flex article {
+	width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	background-color: #e6e7ff;
+	padding: 0.75rem;
+	border-radius: 0.5rem;
+	margin: 0 1rem;
+}
+
+div.rows-flex h2 {
+	text-align: center;
+}
+
+div.rows-flex div.data-1,
+div.data-2,
+div.data-3 {
+	display: flex;
+	flex-direction: column;
+	font-family: var(--paragraph-font);
+	text-align: center;
+}
+
+div.rows-flex article h3 {
+	font-size: 1.4rem;
+	margin: 0 0 5px 0;
+}
+
+div.rows-flex span:nth-of-type(1) {
+	font-style: italic;
+	font-weight: bold;
+}
+div.rows-flex span:nth-of-type(1n + 2) {
+	margin: 0.7rem;
+}
+
+div.rows-flex img {
+	border-radius: 0.5rem;
+	width: 19rem;
+	height: auto;
+	padding: 0.5rem;
+}
+
+div.rows-flex div.data-1,
+div.data-2,
+div.data-3 {
+	text-align: center;
+}
 
 /*---grid table responsive-----*/
 

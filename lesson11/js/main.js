@@ -34,6 +34,59 @@ window.onresize = () => {
 	if (window.innerWidth > 760) mainnav.classList.remove("responsive");
 };
 
+// Town Info Api
+
+const townsUrl = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(townsUrl)
+	.then((response) => {
+		return response.json();
+	})
+	.then((townsList) => {
+		// console.table(townsList);
+
+		const tonwsInfo = townsList["towns"];
+
+		//Fish Haven town data
+		document.querySelector(".fishName").textContent = tonwsInfo[2].name;
+		document.querySelector(".fishQuote").textContent = tonwsInfo[2].motto;
+		document.querySelector(
+			".fishYear"
+		).textContent = `Year Founded: ${tonwsInfo[2].yearFounded}`;
+		document.querySelector(
+			".fishPopulation"
+		).textContent = `Population: ${tonwsInfo[2].currentPopulation}`;
+		document.querySelector(
+			".fishAnnual"
+		).textContent = `Anual Rain Fall: ${tonwsInfo[2].averageRainfall}`;
+
+		//Soda town data
+		document.querySelector(".sodaName").textContent = tonwsInfo[0].name;
+		document.querySelector(".sodaQuote").textContent = tonwsInfo[0].motto;
+		document.querySelector(
+			".sodaYear"
+		).textContent = `Year Founded: ${tonwsInfo[0].yearFounded}`;
+		document.querySelector(
+			".sodaPopulation"
+		).textContent = `Population: ${tonwsInfo[0].currentPopulation}`;
+		document.querySelector(
+			".sodaAnnual"
+		).textContent = `Anual Rain Fall: ${tonwsInfo[0].averageRainfall}`;
+
+		// Preston town data
+		document.querySelector(".prestonName").textContent = tonwsInfo[6].name;
+		document.querySelector(".prestonQuote").textContent = tonwsInfo[6].motto;
+		document.querySelector(
+			".prestonYear"
+		).textContent = `Year Founded: ${tonwsInfo[6].yearFounded}`;
+		document.querySelector(
+			".prestonPopulation"
+		).textContent = `Population: ${tonwsInfo[6].currentPopulation}`;
+		document.querySelector(
+			".prestonAnnual"
+		).textContent = `Anual Rain Fall: ${tonwsInfo[6].averageRainfall}`;
+	});
+
 //
 //Preston Weather API
 //
@@ -46,7 +99,7 @@ const url =
 fetch(url)
 	.then((answer) => answer.json())
 	.then((weatherApi) => {
-		console.log(weatherApi);
+		// console.log(weatherApi);
 		//converting degrees kelvin to degrees fahrenheit firs we need to convert
 		//them to celcius
 
@@ -57,10 +110,10 @@ fetch(url)
 		let fahren = (celc * 9) / 5 + 32;
 		let speed = weatherApi.list[0].wind.speed;
 
-		let getIcon =
-			"https://openweathermap.org/img/w/" +
-			weatherApi.list[0].weather[0].icon +
-			".png";
+		// let getIcon =
+		// 	"https://openweathermap.org/img/w/" +
+		// 	weatherApi.list[0].weather[0].icon +
+		// 	".png";
 
 		// console.log(getIcon);
 
@@ -142,4 +195,17 @@ fetch(url)
 			document.querySelector(`#img${day + 1}`).setAttribute("alt", capitilaze);
 			day++;
 		});
+	});
+
+//
+// Soda Sprints Fetch request
+//
+
+const sodaUrl =
+	"https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=e546755d4cf76003251542416eb2747e";
+
+fetch(sodaUrl)
+	.then((answer) => answer.json())
+	.then((sodaObject) => {
+		console.log(sodaObject);
 	});
