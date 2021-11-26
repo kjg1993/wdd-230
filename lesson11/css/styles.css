@@ -159,15 +159,28 @@ img {
 	width: 19rem;
 	float: left;
 	padding: 1rem;
-	margin: 0px 0px 0px -30px;
+	margin: 28px 0px 10px -30px;
 }
 
-.article-speach a {
+.article .article-speach figure figcaption {
 	text-align: center;
-	margin-left: 1.5rem;
+	font-family: var(--paragraph-font);
+	font-size: 14px;
+}
+
+.article .article-speach .prestonImg {
+	height: 200px;
+}
+.article .article-speach .prestonImg img {
+	height: 200px;
+}
+
+.article .article-speach a {
+	margin-left: 2rem;
 	font-family: var(--paragraph-font);
 	text-decoration: none;
 	color: #1d4e89;
+	font-style: italic;
 }
 
 .article-speach img {
