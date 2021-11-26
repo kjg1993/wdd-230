@@ -159,7 +159,7 @@ img {
 	width: 19rem;
 	float: left;
 	padding: 1rem;
-	margin: 28px 0px 30px -30px;
+	margin: 28px 0px 30 px -30px;
 }
 
 .article .article-speach figure figcaption {
@@ -186,7 +186,7 @@ img {
 .article-speach img {
 	display: block;
 	width: 100%;
-	padding: 0.5rem;
+	padding: 0;
 }
 
 .article-speach p {

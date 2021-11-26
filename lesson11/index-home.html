@@ -40,9 +40,9 @@
 		<nav>
 			<ul class="navigation">
 				<li><a class="ham" href="#">&#9776;Menu</a></li>
-				<li><a href="index-home.html">Home</a></li>
-				<li><a href="../lesson11/preston-site.html">Preston</a></li>
-				<li><a href="soda-springs.html" class="active">Soda Springs</a></li>
+				<li><a href="index-home.html" class="active">Home</a></li>
+				<li><a href="preston-site.html">Preston</a></li>
+				<li><a href="soda-springs.html">Soda Springs</a></li>
 				<li><a href="fish-haven.html">Fish Haven</a></li>
 				<li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
 				<li><a href="../lesson7/gallery-7.html">Galery</a></li>
@@ -51,21 +51,21 @@
 
 		<main>
 			<section class="slider-container">
-				<h2 class="hero-name">name</h2>
+				<h2 class="hero-name">Home</h2>
 				<img
-					src="images/soda-spring.jpg"
+					src="images/img2.jpg"
 					id="slider"
 					alt="Here it will show the images galery"
 				/>
 				<div class="summary-weather">
 					<h3>Wheather summary</h3>
-					<img src="images/sunrise_sun.png" id="SodImg" alt="Current Icon" />
+					<img src="images/sunrise_sun.png" alt="" id="currentImg" />
 					<ul>
-						<li>Currently:<span id="sodaCurrent"></span></li>
-						<li>High:<span id="SodaHigh"> </span></li>
-						<li>Wind Chill:<span id="SodaWind"> </span></li>
-						<li>Humidity:<span id="SodaHumidity"></span></li>
-						<li>Wind speed:<span id="SodaSpeed"></span></li>
+						<li>Currently:<span id="current"></span></li>
+						<li>High:<span id="high">78 </span></li>
+						<li>Wind Chill:<span id="wind"> </span></li>
+						<li>Humidity:<span id="humidity">69%</span></li>
+						<li>Wind speed:<span id="speed">5 mhp</span></li>
 					</ul>
 				</div>
 			</section>
@@ -74,87 +74,104 @@
 				<h2>Five Day Forecast</h2>
 				<div class="grid">
 					<div class="grid-col">
-						<span class="col-head" id="soDay1"></span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="sodaImg1" />
-						<span class="data" id="sodaDeg1"></span>
+						<span class="col-head" id="day1">Wed</span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="img1" />
+						<span class="data" id="degree1">89</span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="soDay2"></span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="sodaImg2" />
-						<span class="data" id="sodaDeg2"></span>
+						<span class="col-head" id="day2">Thu</span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="img2" />
+						<span class="data" id="degree2">87 °F</span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="soDay3"></span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="sodaImg3" />
-						<span class="data" id="sodaDeg3"></span>
+						<span class="col-head" id="day3">Fri</span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="img3" />
+						<span class="data" id="degree3">78 °F</span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="soDay4"></span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="sodaImg4" />
-						<span class="data" id="sodaDeg4"></span>
+						<span class="col-head" id="day4">Sat</span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="img4" />
+						<span class="data" id="degree4">75 °F</span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="soDay5"></span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="sodaImg5" />
-						<span class="data" id="sodaDeg5"></span>
+						<span class="col-head" id="day5">Sun</span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="img5" />
+						<span class="data" id="degree5">72 °F</span>
 					</div>
 				</div>
 			</section>
 
 			<h2>Town Data</h2>
 			<div class="rows-flex">
+				<article class="fish-info">
+					<img src="images/fish-haven-1.jpg" alt="image 1" id="fishImg" />
+
+					<div class="data-1">
+						<h3 class="fishName">Fish-haven</h3>
+						<span class="fishQuote"></span>
+						<span class="fishYear"></span>
+						<span class="fishPopulation"></span>
+						<span class="fishAnnual"></span>
+					</div>
+				</article>
 				<article>
 					<img src="images/soda-springs.jpg" alt="image 2" id="sodaImg" />
 
 					<div class="data-2">
-						<h3 class="sodaName" id="name">Soda Spings</h3>
-						<span class="sodaQuote" id="motto"
-							>Historic Oregon Trail Oasis. The Soda is on Us.</span
-						>
-						<span class="sodaYear" id="year">Year Founded: 1858</span>
-						<span class="sodaPopulation" id="population">Population: 2985</span>
-						<span class="sodaAnnual" id="annual">Anual Rain Fall: 15.75</span>
+						<h3 class="sodaName">Soda</h3>
+						<span class="sodaQuote"></span>
+						<span class="sodaYear"></span>
+						<span class="sodaPopulation"></span>
+						<span class="sodaAnnual"></span>
+					</div>
+				</article>
+				<article>
+					<img src="images/preston.jpg" alt="image 3" id="prestonImg" />
+
+					<div class="data-3">
+						<h3 class="prestonName">Preston</h3>
+						<span class="prestonQuote"></span>
+						<span class="prestonYear"></span>
+						<span class="prestonPopulation"></span>
+						<span class="prestonAnnual"></span>
 					</div>
 				</article>
 			</div>
 
 			<div class="site-description article">
 				<article class="article-speach">
-					<h2>Soda Springs residents react to spring snow</h2>
-					<span class="writer-name"> Daniela Pardo</span>
+					<h2>Your Preston weekend weather forecast</h2>
+					<span class="writer-name">By James Holt</span>
 					<a
-						href="https://www.abc10.com/article/news/if-you-dont-smile-you-cry-sierra-residents-react-to-spring-snow/103-545ff5a7-b201-49e9-9187-baaff84028a5"
+						href="https://www.lep.co.uk/news/weather/your-preston-weekend-weather-forecast-city-prepares-for-strong-winds-and-periods-of-heavy-showers-3163783"
 						target="_blank"
+						class="linkTopage"
 						>Link to the article</a
 					>
 					<figure class="prestonImg">
-						<img src="images/snow-spring.jpg" alt="Preston snow" />
-						<figcaption>Snow storm in preston</figcaption>
+						<img src="images/prestonImg.jpg" alt="Bunny fun" />
+						<figcaption>Your weekend weather update for Preston</figcaption>
 					</figure>
 
 					<p>
-						SODA SPRINGS, Calif. — Back-to-back storms in the Sierra are
-						starting to take a toll on residents who thought they were done with
-						the snow this season. "We thought this was it. We had some lovely
-						weather up here," said Soda Springs resident Leanne Grimmer.
-						Tuesday's winter weather kept Grimmer busy as she plowed her
-						driveway and removed the snow from her home.
+						Preston is set for spells of heavy rain and highs of eight degrees
+						celsius this weekend.There will be brief dry spells for many this
+						evening across Lancashire before heavy showers approach through the
+						night and temperatures drop to two degrees celsius. And on Saturday,
+						March 13, showers will begin to ease during the day and there may
+						possibly even be some sunny spells before heavier bursts of rain
+						return in the evening.
 					</p>
 
 					<p>
-						"I can't remember a May when I had to do this," Grimmer added. The
-						20-year Soda Springs residents owns Donner Summit Rentals. She told
-						ABC10 her guests were worried about the weather impacting their
-						plans for the holiday weekend. "We've got people coming in for
-						Memorial Day weekend, and they're calling, like: 'Is there snow on
-						the ground?' 'Are we going to be able to get in?' 'Do we need
-						chains?' And you wouldn't expect that for Memorial Day," Grimmer
-						explained. While she's frustrated to be dealing with the massive
-						amounts of snow in May, Grimmer is staying optimistic. "You know if
-						you don't smile, you cry," Grimmer said. "So, you just get out and
-						shovel. I was about to take the snow blinds down and pack the
-						shovels away, and then I saw this forecast, and I thought, no, it's
-						not time yet."
+						These showers are set to continue into Sunday, March 14, with highs
+						of nine degrees celsius.And early next week the winds will begin
+						easing, followed by cloudy spells with some rain later on Monday and
+						rain and drizzle Tuesday morning, but some sunshine later on in the
+						day.A brief dry spell for many this evening, before showers approach
+						again, generally heavy through the night, with possible hail, and
+						snow over hills. Winds strengthening, with further coastal gales.
+						Minimum temperature 2 °C.
 					</p>
 					<a href="" id="readButton">Read More</a>
 					<div id="paragraph" style="display: none">
@@ -213,7 +230,6 @@
 			<div class="events-container">
 				<div>
 					<h2>Upcoming Events</h2>
-
 					<p class="data1">Data</p>
 					<p class="data2">Data</p>
 					<p class="data3">Data</p>
@@ -267,7 +283,6 @@
 			</div>
 		</footer>
 		<script src="js/main.js"></script>
-		<script src="js/soda-springs.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>
 			WebFont.load({
