@@ -41,17 +41,17 @@
 			<ul class="navigation">
 				<li><a class="ham" href="#">&#9776;Menu</a></li>
 				<li><a href="../lesson4/preston-4.html">Home</a></li>
-				<li><a href="../lesson10/preston-10.htm">Preston</a></li>
+				<li><a href="../lesson11/preston-site.html">Preston</a></li>
 				<li><a href="soda-springs.html" class="active">Soda Springs</a></li>
 				<li><a href="fish-haven.html">Fish Haven</a></li>
-				<li><a href="">Storm Center</a></li>
-				<li><a href="">Galery</a></li>
+				<li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+				<li><a href="../lesson7/gallery-7.html">Galery</a></li>
 			</ul>
 		</nav>
 
 		<main>
 			<section class="slider-container">
-				<h2 class="hero-name">Soda Springs</h2>
+				<h2 class="hero-name">name</h2>
 				<img
 					src="images/soda-spring.jpg"
 					id="slider"
@@ -59,13 +59,13 @@
 				/>
 				<div class="summary-weather">
 					<h3>Wheather summary</h3>
-					<img src="images/" alt="" id="currentImg" />
+					<img src="images/" id="SodImg" />
 					<ul>
 						<li>Currently:<span id="sodaCurrent"></span></li>
-						<li>High:<span id="SodaHigh">78 </span></li>
+						<li>High:<span id="SodaHigh"> </span></li>
 						<li>Wind Chill:<span id="SodaWind"> </span></li>
-						<li>Humidity:<span id="SodaHumidity">69%</span></li>
-						<li>Wind speed:<span id="SodaSpeed">5 mhp</span></li>
+						<li>Humidity:<span id="SodaHumidity"></span></li>
+						<li>Wind speed:<span id="SodaSpeed"></span></li>
 					</ul>
 				</div>
 			</section>
@@ -74,32 +74,60 @@
 				<h2>Five Day Forecast</h2>
 				<div class="grid">
 					<div class="grid-col">
-						<span class="col-head" id="day1">Wed</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img1" />
-						<span class="data" id="degree1">89</span>
+						<span class="col-head" id="soDay1"></span>
+						<img src="images/" alt="Bright sun" id="sodaImg1" />
+						<span class="data" id="sodaDeg1"></span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="day2">Thu</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img2" />
-						<span class="data" id="degree2">87 °F</span>
+						<span class="col-head" id="soDay2"></span>
+						<img src="images/" alt="Bright sun" id="sodaImg2" />
+						<span class="data" id="sodaDeg2"></span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="day3">Fri</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img3" />
-						<span class="data" id="degree3">78 °F</span>
+						<span class="col-head" id="soDay3"></span>
+						<img src="images/" alt="Bright sun" id="sodaImg3" />
+						<span class="data" id="sodaDeg3"></span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="day4">Sat</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img4" />
-						<span class="data" id="degree4">75 °F</span>
+						<span class="col-head" id="soDay4"></span>
+						<img src="images/" alt="Bright sun" id="sodaImg4" />
+						<span class="data" id="sodaDeg4"></span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="day5">Sun</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img5" />
-						<span class="data" id="degree5">72 °F</span>
+						<span class="col-head" id="soDay5"></span>
+						<img src="images/" alt="Bright sun" id="sodaImg5" />
+						<span class="data" id="sodaDeg5"></span>
 					</div>
 				</div>
 			</section>
+
+			<h2>Town Data</h2>
+			<div class="rows-flex">
+				<!-- <article class="fish-info">
+					<img src="images/fish-haven-1.jpg" alt="image 1" id="fishImg" />
+
+					<div class="data-1">
+						<h3 class="fishName">Fish-haven</h3>
+						<span class="fishQuote"></span>
+						<span class="fishYear"></span>
+						<span class="fishPopulation"></span>
+						<span class="fishAnnual"></span>
+					</div>
+				</article> -->
+				<article>
+					<img src="images/soda-springs.jpg" alt="image 2" id="sodaImg" />
+
+					<div class="data-2">
+						<h3 class="sodaName" id="name">Soda Spings</h3>
+						<span class="sodaQuote" id="motto"
+							>Historic Oregon Trail Oasis. The Soda is on Us.</span
+						>
+						<span class="sodaYear" id="year">Year Founded: 1858</span>
+						<span class="sodaPopulation" id="population">Population: 2985</span>
+						<span class="sodaAnnual" id="annual">Anual Rain Fall: 15.75</span>
+					</div>
+				</article>
+			</div>
 
 			<div class="site-description article">
 				<article class="article-speach">
@@ -192,6 +220,15 @@
 					</div>
 				</article>
 			</div>
+			<div class="events-container">
+				<div>
+					<h2>Upcoming Events</h2>
+
+					<p class="data1">Data</p>
+					<p class="data2">Data</p>
+					<p class="data3">Data</p>
+				</div>
+			</div>
 			<section class="site-description contac-info">
 				<h2 class="ctus">Contact us</h2>
 				<figure>
@@ -240,11 +277,13 @@
 			</div>
 		</footer>
 		<script src="js/main.js"></script>
+		<script src="js/soda-springs.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>
 			WebFont.load({
 				google: {
 					families: ["Poppins"],
+					families: ["Raleway"],
 				},
 			});
 		</script>

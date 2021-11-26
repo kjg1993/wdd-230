@@ -44,14 +44,14 @@
 				<li><a href="preston-site.html">Preston</a></li>
 				<li><a href="soda-springs.html">Soda Springs</a></li>
 				<li><a href="fish-haven.html" class="active">Fish Haven</a></li>
-				<li><a href="">Storm Center</a></li>
-				<li><a href="">Galery</a></li>
+				<li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+				<li><a href="../lesson7/gallery-7.html">Galery</a></li>
 			</ul>
 		</nav>
 
 		<main>
 			<section class="slider-container">
-				<h2 class="hero-name">Fish Haven</h2>
+				<h2 class="name">Fish Haven</h2>
 				<img
 					src="images/fish-haven.jpg"
 					id="slider"
@@ -59,13 +59,13 @@
 				/>
 				<div class="summary-weather">
 					<h3>Wheather summary</h3>
-					<img src="images/" alt="" id="currentImg" />
+					<img src="images/" alt="" id="fishIcon" />
 					<ul>
-						<li>Currently:<span id="current"></span></li>
-						<li>High:<span id="high">78 </span></li>
-						<li>Wind Chill:<span id="wind"> </span></li>
-						<li>Humidity:<span id="humidity">69%</span></li>
-						<li>Wind speed:<span id="speed">5 mhp</span></li>
+						<li>Currently:<span id="fishcurrent"></span></li>
+						<li>High:<span id="fisHigh"></span></li>
+						<li>Wind Chill:<span id="fishWind"> </span></li>
+						<li>Humidity:<span id="fisHumidity"></span></li>
+						<li>Wind speed:<span id="fishSpeed"></span></li>
 					</ul>
 				</div>
 			</section>
@@ -74,32 +74,69 @@
 				<h2>Five Day Forecast</h2>
 				<div class="grid">
 					<div class="grid-col">
-						<span class="col-head" id="day1">Wed</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img1" />
-						<span class="data" id="degree1">89</span>
+						<span class="col-head" id="fishday1"></span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="fishImg1" />
+						<span class="data" id="fishDeg1"></span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="day2">Thu</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img2" />
-						<span class="data" id="degree2">87 °F</span>
+						<span class="col-head" id="fishday2"></span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="fishImg2" />
+						<span class="data" id="fishDeg2"></span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="day3">Fri</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img3" />
-						<span class="data" id="degree3">78 °F</span>
+						<span class="col-head" id="fishday3"></span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="fishImg3" />
+						<span class="data" id="fishDeg3"></span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="day4">Sat</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img4" />
-						<span class="data" id="degree4">75 °F</span>
+						<span class="col-head" id="fishday4"></span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="fishImg4" />
+						<span class="data" id="fishDeg4"></span>
 					</div>
 					<div class="grid-col">
-						<span class="col-head" id="day5">Sun</span>
-						<img src="images/sunrise_sun.png" alt="Bright sun" id="img5" />
-						<span class="data" id="degree5">72 °F</span>
+						<span class="col-head" id="fishday5"></span>
+						<img src="images/sunrise_sun.png" alt="Bright sun" id="fishImg5" />
+						<span class="data" id="fishDeg5"></span>
 					</div>
 				</div>
 			</section>
+
+			<h2>Town Data</h2>
+			<div class="rows-flex">
+				<article class="fish-info">
+					<img src="images/fish-haven-1.jpg" alt="image 1" id="fishImg" />
+
+					<div class="data-1">
+						<h3 class="fishName">Fish-haven</h3>
+						<span class="fishQuote"></span>
+						<span class="fishYear"></span>
+						<span class="fishPopulation"></span>
+						<span class="fishAnnual"></span>
+					</div>
+				</article>
+				<!-- <article>
+					<img src="images/soda-springs.jpg" alt="image 2" id="sodaImg" />
+
+					<div class="data-2">
+						<h3 class="sodaName">Soda</h3>
+						<span class="sodaQuote"></span>
+						<span class="sodaYear"></span>
+						<span class="sodaPopulation"></span>
+						<span class="sodaAnnual"></span>
+					</div>
+				</article>
+				<article>
+					<img src="images/preston.jpg" alt="image 3" id="prestonImg" />
+
+					<div class="data-3">
+						<h3 class="prestonName">Preston</h3>
+						<span class="prestonQuote"></span>
+						<span class="prestonYear"></span>
+						<span class="prestonPopulation"></span>
+						<span class="prestonAnnual"></span>
+					</div>
+				</article> -->
+			</div>
 
 			<div class="site-description article">
 				<article class="article-speach">
@@ -192,6 +229,16 @@
 					</div>
 				</article>
 			</div>
+			<div class="events-container fish-content">
+				<div>
+					<h2>Upcoming Events</h2>
+
+					<p class="data1">Data</p>
+					<p class="data2">Data</p>
+					<p class="data3">Data</p>
+					<p class="data4">Data</p>
+				</div>
+			</div>
 			<section class="site-description contac-info">
 				<h2 class="ctus">Contact us</h2>
 				<figure>
@@ -240,11 +287,13 @@
 			</div>
 		</footer>
 		<script src="js/main.js"></script>
+		<script src="js/fish-haven.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>
 			WebFont.load({
 				google: {
 					families: ["Poppins"],
+					families: ["Raleway"],
 				},
 			});
 		</script>

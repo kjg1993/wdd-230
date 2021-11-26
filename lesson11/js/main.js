@@ -85,12 +85,24 @@ fetch(townsUrl)
 		document.querySelector(
 			".prestonAnnual"
 		).textContent = `Anual Rain Fall: ${tonwsInfo[6].averageRainfall}`;
+
+		let events = tonwsInfo[6].events;
+		// console.log(events);
+
+		let counter = 0;
+		for (let i = 0; i < events.length; i++) {
+			const element = events[i];
+			// console.log(element);
+			document.querySelector(`.data${counter + 1}`).textContent = element;
+			counter++;
+		}
 	});
 
 //
 //Preston Weather API
 //
 
+const daysWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const deg = "­°F";
 const simSpd = "mhp";
 const url =
@@ -99,7 +111,6 @@ const url =
 fetch(url)
 	.then((answer) => answer.json())
 	.then((weatherApi) => {
-		// console.log(weatherApi);
 		//converting degrees kelvin to degrees fahrenheit firs we need to convert
 		//them to celcius
 
@@ -109,22 +120,9 @@ fetch(url)
 		//now those degrees celcius we will convert them to fahrenheit
 		let fahren = (celc * 9) / 5 + 32;
 		let speed = weatherApi.list[0].wind.speed;
+		let img = `https://openweathermap.org/img/w/${weatherApi.list[0].weather[0].icon}.png`;
 
-		// let getIcon =
-		// 	"https://openweathermap.org/img/w/" +
-		// 	weatherApi.list[0].weather[0].icon +
-		// 	".png";
-
-		// console.log(getIcon);
-
-		document
-			.getElementById("currentImg")
-			.setAttribute(
-				"src",
-				"https://openweathermap.org/img/w/" +
-					weatherApi.list[0].weather[0].icon +
-					".png"
-			);
+		document.getElementById("currentImg").setAttribute("src", img);
 		document
 			.getElementById("currentImg")
 			.setAttribute("alt", weatherApi.list[0].weather[0].description);
@@ -165,7 +163,6 @@ fetch(url)
 
 		// console.log(getHour);
 
-		const daysWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 		let day = 0;
 
 		getHour.forEach((weatherInfo) => {
@@ -186,7 +183,7 @@ fetch(url)
 				"https://openweathermap.org/img/w/" +
 				weatherInfo.weather[0].icon +
 				".png";
-			console.log(icon);
+
 			let description = weatherInfo.weather[0].description;
 			let capitilaze =
 				description.charAt(0).toUpperCase() + description.slice(1);
@@ -195,17 +192,4 @@ fetch(url)
 			document.querySelector(`#img${day + 1}`).setAttribute("alt", capitilaze);
 			day++;
 		});
-	});
-
-//
-// Soda Sprints Fetch request
-//
-
-const sodaUrl =
-	"https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=e546755d4cf76003251542416eb2747e";
-
-fetch(sodaUrl)
-	.then((answer) => answer.json())
-	.then((sodaObject) => {
-		console.log(sodaObject);
 	});
