@@ -85,17 +85,6 @@ fetch(townsUrl)
 		document.querySelector(
 			".prestonAnnual"
 		).textContent = `Anual Rain Fall: ${tonwsInfo[6].averageRainfall}`;
-
-		let events = tonwsInfo[6].events;
-		// console.log(events);
-
-		let counter = 0;
-		for (let i = 0; i < events.length; i++) {
-			const element = events[i];
-			// console.log(element);
-			document.querySelector(`.data${counter + 1}`).textContent = element;
-			counter++;
-		}
 	});
 
 //
