@@ -2,6 +2,7 @@
 @media only screen and (min-width: 32.5em) {
 	.navigation {
 		display: flex;
+		justify-content: space-around;
 	}
 	.navigation li {
 		display: block; /* change state in small view */
