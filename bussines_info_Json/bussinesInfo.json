@@ -1,0 +1,39 @@
+{
+	"businnesInfo": [
+		{
+			"name": "Difare SA.",
+			"logo": "https://www.facebook.com/grupodifareec/photos/a.1186743311422269/3755515057878402",
+			"urlSite": "https://difare.com.ec/"
+		},
+		{
+			"name": "Holcim SA.",
+			"logo": "https://www.facebook.com/HolcimEcuador/photos/a.195818607123984/3006608199378330",
+			"urlSite": "https://www.holcim.com.ec/"
+		},
+		{
+			"name": "Dole",
+			"logo": "https://www.facebook.com/DoleCanada/photos/a.279092285618888/1376079462586826/",
+			"urlSite": "http://www.dole.com.ec/"
+		},
+		{
+			"name": "Tia SA.",
+			"logo": "https://www.facebook.com/Tiaec/photos/a.436538669006/10153889630599007",
+			"urlSite": "https://www.tia.com.ec/"
+		},
+		{
+			"name": "Salica SA.",
+			"logo": "https://www.facebook.com/salica-del-ecuador-101324283294309/photos/a.425387937554607/677607875665944",
+			"urlSite": "https://www.salica.es/"
+		},
+		{
+			"name": "Nirsa",
+			"logo": "https://www.facebook.com/nirsaoficial/photos/a.105691477739903/285578799751169/",
+			"urlSite": "https://nirsa.com/"
+		},
+		{
+			"name": "Tonicorp SA.",
+			"logo": "https://www.facebook.com/TonicorpEC/photos/a.1576583479033718/5543907228967970",
+			"urlSite": "http://www.tonicorp.com/"
+		}
+	]
+}
