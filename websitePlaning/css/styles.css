@@ -1,0 +1,113 @@
+:root {
+	--parragraph-font: "Montserrat", sans-serif;
+	--heading-font: "Lora", serif;
+	--first-color: #13293d;
+	--second-color: #008cd4;
+	--third-color: #eef4ed;
+	--fourth-color: #009ba0;
+	--fifth-color: #941c2f;
+}
+
+.main-container {
+	max-width: 62.5rem;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	background-color: var(--first-color);
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	display: block;
+	font-size: 1rem;
+	padding: 1rem;
+	font-family: var(--parragraph-font);
+	color: var(--third-color);
+}
+
+nav a:hover {
+	background-color: var(--fourth-color);
+}
+
+.active {
+	background-color: var(--fourth-color);
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	font-family: var(--heading-font);
+}
+
+h2,
+h3 {
+	font-family: var(--heading-font);
+}
+
+p {
+	text-align: center;
+	width: 40rem;
+	font-family: var(--parragraph-font);
+	display: block;
+	margin: 0 auto;
+}
+
+.domainImg,
+.colorsImg {
+	width: 100%;
+}
+
+.imgLogo,
+.ImgFont,
+.colorsImg {
+	display: block;
+	margin: 0 auto;
+}
+
+a.anchorMap {
+	text-decoration: none;
+	font-family: var(--parragraph-font);
+}
+
+footer {
+	font-family: var(--parragraph-font);
+	text-align: center;
+	margin: 2rem 0 0 0;
+	padding: 1rem;
+}
+
+.wireframes {
+	display: flex;
+	flex-direction: column;
+}
+
+.wireframes a {
+	text-decoration: none;
+	text-align: center;
+	margin: 3rem auto 3rem auto;
+	font-family: var(--parragraph-font);
+	background-color: var(--fourth-color);
+	color: var(--third-color);
+	width: 10rem;
+	padding: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 42rem) {
+	nav ul {
+		display: block;
+		text-align: center;
+		padding: 0;
+	}
+}
