@@ -91,6 +91,10 @@ footer {
 	flex-direction: column;
 }
 
+.wireframes embed {
+	height: 1500px;
+}
+
 .wireframes a {
 	text-decoration: none;
 	text-align: center;
