@@ -3,12 +3,199 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=
-    , initial-scale=1.0"
-		/>
-		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/5c7734b76e.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Guayaquil Chamber of Commerce Home Page</title>
+		<link rel="shortcut icon" href="images/favicon.jpg" />
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/medium.css" />
+		<link rel="stylesheet" href="styles/large.css" />
+		<meta" name="description" content="This is the Guayaquil Chamber of Commerce
+		official page made by Kevin Guzman as a projecto of WDD 230" />
+
+		<!-- Favicon icon go here-->
 	</head>
-	<body></body>
+	<body>
+		<header>
+			<nav>
+				<ul class="navigation">
+					<li><a class="ham" href="#">&#9776;Menu</a></li>
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="city.html">City</a></li>
+					<li><a href="join.html">Join</a></li>
+					<li><a href="directory.html">Directory</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<section class="logo-box">
+				<h1>Guayaquil Chamber of Commerce</h1>
+				<img
+					src="images/chamber_logo_250x250.jpg"
+					alt="Guayaquil Chamber Logo"
+					class="logo"
+				/>
+			</section>
+		</header>
+
+		<main>
+			<section class="hero">
+				<img
+					src="images/guayaquil3_rezise.jpg"
+					alt="Guayaquil City"
+					class="heroImage"
+				/>
+				<div class="action">
+					<p>
+						Join the Guayaquil Chamber of Commerce and be part of the Change in
+						our community
+					</p>
+					<button class="btn-banner" onclick="location.href='join.html'">
+						Contact us
+					</button>
+				</div>
+				<div class="weatherContainer">
+					<div class="placeContainer">
+						<span class="cityName"></span>
+						<span class="countryName"></span>
+					</div>
+
+					<div class="today-cont">
+						<span class="current"></span>
+						<img src="images/" alt="Icon" class="icon" />
+					</div>
+					<div class="day1-forecast">
+						<span id="day1"></span>
+						<span class="current1"></span>
+					</div>
+					<div class="day1-forecast">
+						<span id="day2"></span>
+						<span class="current2"></span>
+					</div>
+					<div class="day1-forecast">
+						<span id="day3"></span>
+						<span class="current3"></span>
+					</div>
+				</div>
+			</section>
+			<section class="advertisementSection">
+				<div class="sliderShow">
+					<div class="mySlider fade">
+						<img src="images/b1.jpg" alt="Banner Advertisement" />
+					</div>
+					<div class="mySlider fade">
+						<img src="images/b2.jpg" alt="Banner Advertisement" />
+					</div>
+
+					<div class="mySlider fade">
+						<img src="images/b3.jpg" alt="Banner Advertisement" />
+					</div>
+
+					<div class="mySlider fade">
+						<img src="images/b4.jpg" alt="Banner Advertisement" />
+					</div>
+
+					<div class="mySlider fade">
+						<img src="images/b5.jpg" alt="Banner Advertisement" />
+					</div>
+
+					<div class="indicators">
+						<span class="indicator active" onclick="currentSlider(1)"></span>
+						<span class="indicator" onclick="currentSlider(2)"></span>
+						<span class="indicator" onclick="currentSlider(3)"></span>
+						<span class="indicator" onclick="currentSlider(4)"></span>
+						<span class="indicator" onclick="currentSlider(5)"></span>
+					</div>
+				</div>
+			</section>
+			<section class="purpuse">
+				<h2>Our Purpuse</h2>
+				<p class="purpose-statement">
+					Chamber of Commerce of Guayaquil is aimed at those large and small
+					businessmen and entrepreneurs who are just starting their way, to
+					promote competitiveness and open new markets both nationally and
+					internationally, always having as a short, medium and long-term
+					objective. and with the sole purpose of developing the maximum
+					potential of our partners.
+				</p>
+
+				<h2>Upcoming Events</h2>
+				<div class="container-events">
+					<div class="events">
+						<img src="images/businnes_rezise.jpg" alt="Bussines" />
+						<h2>Weekly webinars</h2>
+						<p>
+							Join our weekly webinars and learn from the best, look for new
+							ideas, only for members of the Chamber of trade Our events attract
+							government, business and opinion leaders together to discuss the
+							issues that are important to the business community.
+						</p>
+					</div>
+					<div class="events">
+						<img src="images/markets_rezise.jpg" alt="Building" />
+						<h2>How to find new markets</h2>
+						<p>
+							Training on how to find new markets and how to expand your
+							business or diversify the products or services you offer, there
+							are many opportunities and here we will teach you how to find or
+							identify them, do not wait any longer, learn and be the best.
+						</p>
+					</div>
+					<div class="events">
+						<img src="images/strategies_rezise.jpg" alt="Chess Player" />
+						<h2>Discover new strategies</h2>
+						<p>
+							Currently there are many ways to find new and potential customers,
+							discover which strategy is best for you and how to apply it to
+							your company or venture, do not stay and come and join and be part
+							of the change.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="icons-container">
+				<img
+					src="images/logo_footer_gcc_75x75.jpg"
+					alt="Logo Chamber of Commerce"
+				/>
+				<div class="social-icons">
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</div>
+			<div class="copyright">
+				<span>© 2021|Kevin Guzman </span>
+				<span>Email: gcc@email.com</span>
+				<span>Guayaquil│BYU Online Learning</span>
+			</div>
+			<!-- <div class="copyright">
+				<span>© 2021|Kevin Guzman - WDD 230│</span><span>Guayaquil│</span
+				><span>
+					<a href="https://www.byui.edu/online" target="blank"
+						>BYU Online Learning</a
+					>
+				</span>
+			</div> -->
+			<div id="lastModify">
+				<span id="date"></span>
+			</div>
+		</footer>
+		<script src="js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ["Lora"],
+					families: ["Montserrat"],
+					families: ["Space Grotesk"],
+				},
+			});
+		</script>
+	</body>
 </html>

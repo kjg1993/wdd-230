@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/5c7734b76e.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Guayaquil Chamber of Commerce Join us Page</title>
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<meta
+			name="description"
+			content="This is the Guayaquil Chamber of Commerce official page made 
+			by Kevin Guzman as a projecto of WDD 230"
+		/>
+		<link rel="shortcut icon" href="images/favicon.jpg" />
+		<!-- Favicon icon go here-->
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="navigation">
+					<li><a class="ham" href="#">&#9776;Menu</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="city.html">City</a></li>
+					<li><a href="join.html" class="active">Join</a></li>
+					<li><a href="directory.html">Directory</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<section class="logo-box">
+				<h1>Guayaquil Chamber of Commerce</h1>
+				<img src="" alt="" class="logo" />
+				<div class="form-container">
+					<form method="get" action="thanks-page.html">
+						<fieldset class="firstForm">
+							<legend>Personal information</legend>
+							<label for="name" class="top"
+								>First Name*
+								<input
+									type="text"
+									name="name"
+									id="name"
+									placeholder="Type your First name here"
+									required
+							/></label>
+
+							<label for="name" class="top"
+								>Last Name*
+								<input
+									type="text"
+									name="name"
+									id="name"
+									placeholder="Type your Last name here"
+									required
+							/></label>
+
+							<label for="email" class="top"
+								>Email
+								<input
+									type="email"
+									name="email"
+									id="email"
+									placeholder="youremail@email.com"
+									required
+							/></label>
+
+							<label for="email" class="top"
+								>Title
+								<input
+									type="text"
+									name="title"
+									id="title"
+									placeholder="Title your title"
+							/></label>
+
+							<label for="phone" class="top"
+								>Phone* <input type="tel" name="phone" id="phone" required
+							/></label>
+						</fieldset>
+
+						<fieldset>
+							<legend>Business Info</legend>
+							<label for="name" class="top"
+								>Business Name*
+								<input
+									type="text"
+									name="name-compañy"
+									id="name"
+									placeholder="Type the name of your company"
+									required
+							/></label>
+
+							<label for="name" class="top"
+								>Business Address*
+								<input
+									type="text"
+									name="address"
+									id="address"
+									placeholder="Type the address"
+							/></label>
+							<label for="name" class="top"
+								>Business Website
+								<input
+									type="url"
+									name="website"
+									id="website"
+									placeholder="Type the Website Url"
+							/></label>
+						</fieldset>
+
+						<fieldset>
+							<legend>Bissines Description</legend>
+
+							<div class="textContainer">
+								<label for="comments" class="comments">Comments</label>
+								<textarea
+									name="comments"
+									id="comments"
+									cols="30"
+									rows="10"
+								></textarea>
+							</div>
+						</fieldset>
+						<input type="submit" value="Send report" class="btn" />
+					</form>
+				</div>
+			</section>
+			<section class="membership">
+				<h2>Membership Levels</h2>
+				<div class="membership-container">
+					<div class="levels">
+						<h3>Non-Profit</h3>
+						<img src="images/handshake.png" alt="handshake icon" />
+						<span>$100</span>
+						<h4>Benefits</h4>
+						<span>Attend and participate in Chamber events</span>
+					</div>
+					<div class="levels">
+						<h3>Bronze</h3>
+						<img src="images/bronze-medal.png" alt="Bronze Icon" />
+						<span>$200</span>
+						<h4>Benefits</h4>
+						<span>Business Training</span>
+					</div>
+					<div class="levels">
+						<h3>Silver</h3>
+						<img src="images/silver-medal.png" alt="Silver Icon" />
+						<span>$400</span>
+						<h4>Benefits</h4>
+						<span>Social media posts</span>
+					</div>
+					<div class="levels">
+						<h3>Gold</h3>
+						<img src="images/gold-medal.png" alt="Gold Icon" />
+						<span>$1000</span>
+						<h4>Benefits</h4>
+						<span>Sponsorships with levels of advertising,</span>
+					</div>
+				</div>
+			</section>
+		</header>
+		<footer>
+			<div class="icons-container">
+				<img
+					src="images/logo_footer_gcc_75x75.jpg"
+					alt="Logo Chamber of Commerce"
+				/>
+				<div class="social-icons">
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</div>
+			<div class="copyright">
+				<span>© 2021|Kevin Guzman </span>
+				<span>Email: gcc@email.com</span>
+				<span>Guayaquil│BYU Online Learning</span>
+			</div>
+
+			<div id="lastModify">
+				<span id="date"></span>
+			</div>
+		</footer>
+		<script src="js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({
+				google: {
+					families: ["Lora"],
+					families: ["Montserrat"],
+				},
+			});
+		</script>
+	</body>
+</html>

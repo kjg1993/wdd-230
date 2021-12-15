@@ -1,0 +1,15 @@
+@media only screen and (max-width: 64em) {
+	section.hero {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	section.hero img {
+		padding: 0;
+	}
+
+	section div.weatherContainer {
+		width: 100%;
+	}
+}
