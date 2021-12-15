@@ -27,6 +27,7 @@ fetch(urlApi)
 
 			let web = document.createElement("a");
 			web.textContent = element.name;
+			web.className = "anchor";
 			web.setAttribute("href", element.urlSite);
 			web.setAttribute("target", "_blank");
 

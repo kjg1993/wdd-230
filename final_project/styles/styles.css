@@ -621,7 +621,34 @@ section div.levels span {
 section div.levels h4 {
 	text-align: center;
 }
-/*-----forms styles -------*/
+
+/*Directory Page*/
+main div.directory {
+}
+
+main div.directory div.content-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 0 2.5rem 0;
+}
+
+main div.directory div.content-card img {
+	max-width: 15.625rem;
+	border-radius: 0.5rem;
+}
+
+main div.directory div.content-card a {
+	text-decoration: none;
+	font-family: var(--paragraph-font);
+	background-color: var(--firs-color);
+	color: var(--third-color);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: 1rem 0 0 0;
+}
+
 /*Media querys small*/
 @media only screen and (max-width: 32rem) {
 	footer div.copyright {
