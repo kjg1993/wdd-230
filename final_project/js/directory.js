@@ -37,3 +37,25 @@ fetch(urlApi)
 			document.querySelector(".directory").appendChild(container);
 		}
 	});
+
+/// grid view and list view
+
+const grid = document.querySelector(".grid");
+const list = document.querySelector(".list");
+const direc = document.querySelector(".directory");
+
+grid.addEventListener(
+	"click",
+	() => {
+		direc.classList.toggle(".directory");
+	},
+	false
+);
+
+list.addEventListener(
+	"click",
+	() => {
+		direc.classList.toggle("block");
+	},
+	false
+);

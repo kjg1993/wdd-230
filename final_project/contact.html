@@ -4,9 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Guayaquil Chamber of Commerce Home Page</title>
+		<script
+			src="https://kit.fontawesome.com/5c7734b76e.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Guayaquil Chamber of Commerce Contact Page</title>
 		<link rel="stylesheet" href="styles/normalize.css" />
 		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/medium.css" />
+		<link rel="stylesheet" href="styles/large.css" />
 		<meta
 			name="description"
 			content="This is the Guayaquil Chamber of Commerce official page made 
@@ -32,7 +38,85 @@
 				<img src="" alt="" class="logo" />
 			</section>
 		</header>
-		<footer></footer>
+		<main>
+			<section class="contatUs">
+				<h2>Contact</h2>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3986.858912360165!2d-79.88864312571233!3d-2.206939047618727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1639611804516!5m2!1ses-419!2sec"
+					width="100%"
+					height="500"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+				></iframe>
+			</section>
+			<section class="contactForm">
+				<h2>Let us your comments</h2>
+				<form method="get" action="thanks-page.html">
+					<fieldset class="firstForm">
+						<legend>Personal information</legend>
+						<label for="name" class="formName"
+							>Full name
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Type your First name here"
+						/></label>
+
+						<label for="email" class="formEmail"
+							>Email
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="youremail@email.com"
+						/></label>
+
+						<label for="phone" class="formNumber"
+							>Phone <input type="tel" name="phone" id="phone"
+						/></label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Let us your comments</legend>
+
+						<div class="textContainer">
+							<label for="comments" class="formComments">Comments</label>
+							<textarea
+								name="comments"
+								id="comments"
+								cols="30"
+								rows="10"
+							></textarea>
+						</div>
+					</fieldset>
+					<input type="submit" value="Send report" class="btn" />
+				</form>
+			</section>
+		</main>
+		<footer>
+			<div class="icons-container">
+				<img
+					src="images/logo_footer_gcc_75x75.jpg"
+					alt="Logo Chamber of Commerce"
+				/>
+				<div class="social-icons">
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</div>
+			<div class="copyright">
+				<span>© 2021|Kevin Guzman </span>
+				<span>Email: gcc@email.com</span>
+				<span>Guayaquil│BYU Online Learning</span>
+			</div>
+
+			<div id="lastModify">
+				<span id="date"></span>
+			</div>
+		</footer>
 		<script src="js/main.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>
