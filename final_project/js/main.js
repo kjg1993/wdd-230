@@ -100,3 +100,43 @@ fetch(url)
 			day++;
 		});
 	});
+
+/// Last modify section code
+let lastModi = function () {
+	/*convert document.lastModified to an object and I put into variable
+    /* called lastModified*/
+	let lastModified = new Date(document.lastModified),
+		/*get the day, month, and etc, from my lastModified object*/
+		day = lastModified.getDay(),
+		month = lastModified.getMonth(),
+		year = lastModified.getFullYear(),
+		hour = lastModified.getHours(),
+		minutes = lastModified.getMinutes(),
+		monthNames = [
+			"January",
+			"February",
+			"March",
+			"April",
+			"May",
+			"June",
+			"July",
+			"August",
+			"September",
+			"October",
+			"November",
+			"December",
+		];
+
+	dayNames = [
+		"Sunday",
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Thursday",
+		"Friday",
+		"Saturday",
+	];
+};
+
+//here I run my function
+lastModi();

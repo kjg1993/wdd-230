@@ -292,6 +292,8 @@ section div.container-events div.events img {
 }
 
 footer {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	font-family: var(--paragraph-font);
 }
@@ -314,12 +316,21 @@ footer i.fab {
 
 footer div.copyright {
 	width: 100%;
-	height: 2.5rem;
+	height: 15vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	font-size: 1.2rem;
 	text-align: center;
+}
+
+footer div#lastModify {
+	width: 100%;
+	height: 12rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	color: var(--firs-color);
 }
 
 /*----------------------------------*/
