@@ -326,10 +326,12 @@ footer div.copyright {
 
 footer div#lastModify {
 	width: 100%;
-	height: 12rem;
+	height: 2.5rem;
 	display: flex;
-	justify-content: space-between;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	color: var(--firs-color);
 }
 

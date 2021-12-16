@@ -105,37 +105,34 @@ fetch(url)
 let lastModi = function () {
 	/*convert document.lastModified to an object and I put into variable
     /* called lastModified*/
-	let lastModified = new Date(document.lastModified),
-		/*get the day, month, and etc, from my lastModified object*/
-		day = lastModified.getDay(),
-		month = lastModified.getMonth(),
-		year = lastModified.getFullYear(),
-		hour = lastModified.getHours(),
-		minutes = lastModified.getMinutes(),
-		monthNames = [
-			"January",
-			"February",
-			"March",
-			"April",
-			"May",
-			"June",
-			"July",
-			"August",
-			"September",
-			"October",
-			"November",
-			"December",
-		];
+	let last = new Date(document.lastModified);
+	/*get the day, month, and etc, from my lastModified object*/
+	let day = last.getDay();
+	let month = last.getMonth();
+	let year = last.getFullYear();
+	let hour = last.getHours();
 
-	dayNames = [
-		"Sunday",
-		"Monday",
-		"Tuesday",
-		"Wednesday",
-		"Thursday",
-		"Friday",
-		"Saturday",
+	monthNames = [
+		"January",
+		"February",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"August",
+		"September",
+		"October",
+		"November",
+		"December",
 	];
+
+	document.getElementById(
+		"day"
+	).textContent = `Last modified: ${daysWeek[day]}- `;
+	document.getElementById("month").textContent = `${monthNames[month]}- `;
+	document.getElementById("year").textContent = ` ${year}- `;
+	document.getElementById("hour").textContent = `${hour}-hours`;
 };
 
 //here I run my function
